@@ -1,0 +1,16 @@
+{
+  "name": "系统分析师 · 49 天备考计划",
+  "short_name": "系统分析师",
+  "description": "系统分析师 49 天备考执行工具",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f6fb",
+  "theme_color": "#eef2ff",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#eef2ff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="系统分析师" />
+    <meta name="description" content="系统分析师 49 天备考执行工具" />
+    <link rel="manifest" href="./manifest.webmanifest?v=3" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
+    <link rel="stylesheet" href="./styles.css?v=3" />
+    <title>系统分析师 · 49 天计划</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand-lockup">
+          <div class="brand-mark">Σ</div>
+          <div>
+            <div class="brand-name">系统分析师</div>
+            <div class="brand-subtitle">49 天备考计划</div>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="主导航">
+          <button class="nav-item active" data-view="today" type="button">
+            <span class="nav-icon">⌂</span><span>今日</span>
+          </button>
+          <button class="nav-item" data-view="plan" type="button">
+            <span class="nav-icon">▦</span><span>计划</span>
+          </button>
+          <button class="nav-item" data-view="review" type="button">
+            <span class="nav-icon">↗</span><span>复盘</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-spacer"></div>
+        <div class="exam-card">
+          <div class="eyebrow">目标考试日</div>
+          <div class="exam-date">2026 年 10 月 24 日</div>
+          <div class="exam-countdown" id="sidebar-countdown">—</div>
+          <div class="muted">综合 · 案例 · 论文</div>
+        </div>
+        <div class="sidebar-foot">本地保存 · 无需登录</div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <button class="icon-button mobile-menu" id="menu-button" type="button" aria-label="打开导航">☰</button>
+          <div class="topbar-title">
+            <div class="eyebrow" id="page-kicker">今日执行</div>
+            <h1 id="page-title">今日</h1>
+          </div>
+          <div class="topbar-actions">
+            <button class="text-button" id="export-button" type="button">导出备份</button>
+            <label class="text-button file-button" for="import-input">导入备份<input id="import-input" type="file" accept="application/json,.json" /></label>
+          </div>
+        </header>
+
+        <section class="content" id="app" aria-live="polite"></section>
+        <nav class="bottom-nav" aria-label="移动端主导航">
+          <button class="nav-item active" data-view="today" type="button"><span class="nav-icon">⌂</span><span>今日</span></button>
+          <button class="nav-item" data-view="plan" type="button"><span class="nav-icon">▦</span><span>计划</span></button>
+          <button class="nav-item" data-view="review" type="button"><span class="nav-icon">↗</span><span>复盘</span></button>
+        </nav>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status"></div>
+    <script src="./plan.js?v=3"></script>
+    <script src="./app.js?v=3"></script>
+  </body>
+</html>
